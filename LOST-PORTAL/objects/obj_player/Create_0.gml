@@ -1,22 +1,22 @@
-// Movement and physics variables
-move_speed  = 4;
-jump_speed  = -16;
-gravity     = 0.6;
-hsp         = 0;    // horizontal speed
-vsp         = 0;    // vertical speed
+/// Movement & Physics
+move_speed      = 4;          // Horizontal movement speed
+jump_speed      = -15;        // Jump speed (negative = upward)
+gravity_force   = 0.5;        // Gravity strength
+max_fall_speed  = 10;         // Maximum falling speed
 
-// Health & state
-hp          = 3;   // 3 hearts (HP)
-directionFacing = 1; // 1 = right, -1 = left
+/// Movement state tracking
+move_x = 0;
+move_y = 0;
 
-// Animation states (booleans)
-isWalking   = false;
-isJumping   = false;
-isShooting  = false;
+/// Ground, jump, & climbing state
+is_grounded = false;
 isClimbing  = false;
 
-// Set initial sprite
-sprite_index = spr_player_idle;
+/// Direction tracking (1 = right, -1 = left)
+directionFacing = 1;
 
+/// Crystal Collection Variables
+crystal_count   = 0;          // Crystals collected so far
+crystals_needed = 5;          // Crystals required to unlock the portal
 
 

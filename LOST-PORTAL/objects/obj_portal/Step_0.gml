@@ -1,14 +1,17 @@
-if (global.crystalCount >= global.requiredCrystals) {
-    // Move to the next level.
-    global.currentLevelIndex++;
-    
-    // Check if there are more levels.
-    if (global.currentLevelIndex < array_length(global.levels)) {
-        // Optionally reset the crystal count for the new level.
-        global.crystalCount = 0;
-        room_goto(global.levels[global.currentLevelIndex]);
-    } else {
-        // No more levels—go to the tap-to-play (or win) screen.
-        room_goto(room_taptoplay);
-    }
+// Look for the player instance nearby
+var player = instance_nearest(x, y, obj_player);
+
+// If the player exists and has enough crystals, open the door.
+if (player != noone && player.crystal_count >= player.crystals_needed) {
+    isOpen = true;
+} else {
+    isOpen = false;
 }
+
+// Update the door's appearance based on state.
+if (isOpen) {
+    sprite_index = spr_door_open;   // Show the open door sprite
+} else {
+    sprite_index = spr_door_closed; // Show the closed door sprite
+}
+
