@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_portal",
   "spriteId": {
-    "name": "spr_door_open",
-    "path": "sprites/spr_door_open/spr_door_open.yy",
+    "name": "spr_door_closed",
+    "path": "sprites/spr_door_closed/spr_door_closed.yy",
   },
   "solid": false,
   "visible": true,

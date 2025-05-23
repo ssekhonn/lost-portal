@@ -78,3 +78,8 @@ if (keyboard_check_pressed(ord("Z"))) {
 } else {
     sprite_index = spr_player_idle;
 }
+
+var cam_width = camera_get_view_width(camera);
+var cam_height = camera_get_view_height(camera);
+
+camera_set_view_pos(camera, x - cam_width / 2, y - cam_height / 2);

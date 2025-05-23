@@ -16,3 +16,4 @@ directionFacing = 1;
 // Crystal Collection Requirement
 crystals_needed = 5;  // Number of crystals needed to open the door
 
+camera = view_camera[0]; // Get the active camera
