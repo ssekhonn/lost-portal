@@ -33,6 +33,7 @@
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":1,},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":0,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":10,},
+    {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},"order":1,},
     {"id":{"name":"spr_cutscene","path":"sprites/spr_cutscene/spr_cutscene.yy",},"order":7,},
     {"id":{"name":"room_level3","path":"rooms/room_level3/room_level3.yy",},"order":3,},
     {"id":{"name":"spr_crystal","path":"sprites/spr_crystal/spr_crystal.yy",},"order":3,},
