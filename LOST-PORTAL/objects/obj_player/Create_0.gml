@@ -17,3 +17,4 @@ directionFacing = 1;
 crystals_needed = 5;  // Number of crystals needed to open the door
 
 camera = view_camera[0]; // Get the active camera
+global.crystal_count = 0;
