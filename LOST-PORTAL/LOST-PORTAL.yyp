@@ -26,6 +26,7 @@
     {"id":{"name":"obj_crystal","path":"objects/obj_crystal/obj_crystal.yy",},"order":4,},
     {"id":{"name":"room_taptoplay","path":"rooms/room_taptoplay/room_taptoplay.yy",},"order":5,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":6,},
+    {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},"order":20,},
     {"id":{"name":"spr_player_climb","path":"sprites/spr_player_climb/spr_player_climb.yy",},"order":12,},
     {"id":{"name":"spr_player_walk_right","path":"sprites/spr_player_walk_right/spr_player_walk_right.yy",},"order":9,},
     {"id":{"name":"fnt_hud","path":"fonts/fnt_hud/fnt_hud.yy",},"order":0,},
