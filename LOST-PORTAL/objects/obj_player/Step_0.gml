@@ -1,5 +1,3 @@
-// obj_player: Step Event
-
 // --- Horizontal Movement & Direction Tracking
 move_x = (keyboard_check(vk_right) - keyboard_check(vk_left)) * move_speed;
 x += move_x;
@@ -7,7 +5,7 @@ if (keyboard_check(vk_left))  directionFacing = -1;
 if (keyboard_check(vk_right)) directionFacing = 1;
 
 // --- Climbing Check
-if (instance_place(x, y, obj_ladder) != noone) {
+if (place_meeting(x, y, obj_ladder)) {
     isClimbing = true;
     if (keyboard_check(vk_up)) {
         move_y = -move_speed;
@@ -36,10 +34,17 @@ if (instance_place(x, y, obj_ladder) != noone) {
     // --- Vertical Movement
     y += move_y;
     
-    // --- Landing Check on Ground
+    // --- Landing Check on Ground (for all ground objects)
     if (move_y >= 0) {
         var floor_inst = instance_place(x, y + 2, obj_ground);
-        if (floor_inst != noone) {
+        var floor_inst10 = instance_place(x, y + 2, obj_ground10);
+        var floor_inst1011 = instance_place(x, y + 2, obj_ground1011);
+
+        // Prioritize whichever ground object is detected first
+        if (floor_inst10 != noone) floor_inst = floor_inst10;
+        if (floor_inst1011 != noone) floor_inst = floor_inst1011;
+
+        if (floor_inst != noone && instance_exists(floor_inst)) {
             var off = bbox_bottom - y;
             y = floor_inst.y - off;
             move_y = 0;
@@ -69,8 +74,6 @@ if (keyboard_check_pressed(ord("Z"))) {
 // --- Sprite Selection (Based on action priority)
 if (keyboard_check_pressed(ord("Z"))) {
     sprite_index = spr_player_shoot;
-} else if (!is_grounded && !isClimbing) {
-    sprite_index = spr_player_jump;
 } else if (isClimbing) {
     sprite_index = spr_player_climb;
 } else if (move_x != 0) {
@@ -79,7 +82,7 @@ if (keyboard_check_pressed(ord("Z"))) {
     sprite_index = spr_player_idle;
 }
 
+// --- Camera Follow
 var cam_width = camera_get_view_width(camera);
 var cam_height = camera_get_view_height(camera);
-
 camera_set_view_pos(camera, x - cam_width / 2, y - cam_height / 2);
