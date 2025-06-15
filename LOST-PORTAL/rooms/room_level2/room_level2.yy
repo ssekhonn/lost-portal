@@ -16,6 +16,12 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
+<<<<<<< HEAD
+=======
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_2","instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_136C4C6C","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":448.0,},
+      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+>>>>>>> ff9c7c6541c6301f0319d88c0f819cb710892b1b
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66E5DE7E","properties":[],"isDnd":false,"objectId":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.5889572,"scaleY":0.24363637,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":544.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76013518","properties":[],"isDnd":false,"objectId":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.9345604,"scaleY":0.36,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":544.0,},
@@ -97,6 +103,7 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
+<<<<<<< HEAD
     {"name":"inst_591DA78F","path":"rooms/room_level2/room_level2.yy",},
     {"name":"inst_13BEE13C","path":"rooms/room_level2/room_level2.yy",},
     {"name":"inst_10CBF324","path":"rooms/room_level2/room_level2.yy",},
@@ -118,6 +125,28 @@
     {"name":"inst_6840D6D7","path":"rooms/room_level2/room_level2.yy",},
     {"name":"inst_49B1C1D0","path":"rooms/room_level2/room_level2.yy",},
     {"name":"inst_34D34FBB","path":"rooms/room_level2/room_level2.yy",},
+=======
+    {"name":"inst_200A99D1","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_A0D83A0","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_54EFFA2C","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_29532524","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_55D8BA94","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_7D099F14","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_72E0E504","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_70C4BD10","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_548EC867","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_2170EE53","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_11839294","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_3A19EC2A","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_68500A66","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_612F3C4B","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_726FF282","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_28BD2422","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_7305ECBC","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_66FA8AD5","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_D03E08A","path":"rooms/room_level2/room_level2.yy",},
+    {"name":"inst_136C4C6C","path":"rooms/room_level2/room_level2.yy",},
+>>>>>>> ff9c7c6541c6301f0319d88c0f819cb710892b1b
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
