@@ -37,13 +37,9 @@ if (place_meeting(x, y, obj_ladder)) {
     // --- Landing Check on Ground (for all ground objects)
     if (move_y >= 0) {
         var floor_inst = instance_place(x, y + 2, obj_ground);
-        var floor_inst10 = instance_place(x, y + 2, obj_ground10);
-        var floor_inst1011 = instance_place(x, y + 2, obj_ground1011);
-
+       
         // Prioritize whichever ground object is detected first
-        if (floor_inst10 != noone) floor_inst = floor_inst10;
-        if (floor_inst1011 != noone) floor_inst = floor_inst1011;
-
+     
         if (floor_inst != noone && instance_exists(floor_inst)) {
             var off = bbox_bottom - y;
             y = floor_inst.y - off;
@@ -61,15 +57,7 @@ if (y < -20 || y > room_height + 20) {
 }
 
 // --- Shooting Code (Bullet Creation)
-if (keyboard_check_pressed(ord("Z"))) {
-    var aim_angle = point_direction(x, y, mouse_x, mouse_y);
-    var offset = 16;
-    var bullet_x = x + lengthdir_x(offset, aim_angle);
-    var bullet_y = y + lengthdir_y(offset, aim_angle);
-    var bullet = instance_create_layer(bullet_x, bullet_y, "Instances", obj_bullet);
-    bullet.direction = aim_angle;
-    bullet.speed = 8;
-}
+if (keyboard_check_pressed(ord("Z"))) { var aim_angle = point_direction(x, y, mouse_x, mouse_y); var offset = 16; var bullet_x = x + lengthdir_x(offset, aim_angle); var bullet_y = y + lengthdir_y(offset, aim_angle); var bullet = instance_create_layer(bullet_x, bullet_y, "Instances", obj_bullet); bullet.direction = aim_angle; bullet.speed = 8; }
 
 // --- Sprite Selection (Based on action priority)
 if (keyboard_check_pressed(ord("Z"))) {
@@ -80,7 +68,10 @@ if (keyboard_check_pressed(ord("Z"))) {
     sprite_index = (directionFacing == 1) ? spr_player_walk_right : spr_player_walk_left;
 } else {
     sprite_index = spr_player_idle;
+}if (keyboard_check_pressed(ord("Z"))) {
+    sprite_index = spr_player_shoot;
 }
+
 
 // --- Camera Follow
 var cam_width = camera_get_view_width(camera);
