@@ -3,7 +3,6 @@
   "resourceVersion": "1.6",
   "name": "LOST-PORTAL",
   "resources": [
-    {"id":{"name":"room_level2","path":"rooms/room_level2/room_level2.yy",},"order":2,},
     {"id":{"name":"spr_moveRight","path":"sprites/spr_moveRight/spr_moveRight.yy",},"order":25,},
     {"id":{"name":"obj_ladder","path":"objects/obj_ladder/obj_ladder.yy",},"order":1,},
     {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"order":14,},
@@ -51,7 +50,6 @@
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":1,},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":0,},
     {"id":{"name":"spr_cutscene","path":"sprites/spr_cutscene/spr_cutscene.yy",},"order":7,},
-    {"id":{"name":"room_level1","path":"rooms/room_level1/room_level1.yy",},"order":3,},
     {"id":{"name":"obj_fireball","path":"objects/obj_fireball/obj_fireball.yy",},"order":13,},
     {"id":{"name":"spr_crystal","path":"sprites/spr_crystal/spr_crystal.yy",},"order":3,},
     {"id":{"name":"Object15","path":"objects/Object15/Object15.yy",},"order":16,},
@@ -76,8 +74,6 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"room_level3","path":"rooms/room_level3/room_level3.yy",},},
-    {"roomId":{"name":"room_level2","path":"rooms/room_level2/room_level2.yy",},},
-    {"roomId":{"name":"room_level1","path":"rooms/room_level1/room_level1.yy",},},
     {"roomId":{"name":"room_cutscene","path":"rooms/room_cutscene/room_cutscene.yy",},},
     {"roomId":{"name":"room_level4","path":"rooms/room_level4/room_level4.yy",},},
     {"roomId":{"name":"room_taptoplay","path":"rooms/room_taptoplay/room_taptoplay.yy",},},
